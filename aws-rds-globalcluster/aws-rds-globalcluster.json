@@ -46,7 +46,18 @@
       "type": "boolean"
     },
     "GlobalEndpoint": {
+<<<<<<< HEAD
       "$ref": "#/definitions/GlobalEndpoint"
+=======
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Address": {
+          "description": "The writer endpoint for the global database cluster. This endpoint always points to the writer DB instance in the current primary cluster.",
+          "type": "string"
+        }
+      }
+>>>>>>> 95aa9a5 (add global cluster endpoint to rds-globalcluster)
     }
   },
   "oneOf": [
